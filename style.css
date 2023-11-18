@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Chivo+Mono:wght@100&family=Kanit&family=Poppins:wght@400;500&display=swap');
+
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, black,grey);
+    overflow: hidden;
+}
+.all{
+    display: inline;
+}
+.textTitle{
+    font-family: 'Cedarville Cursive', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    color: white;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00ff66, 0 0 70px #00ff62, 0 0 80px #04ff00, 0 0 100px #00ff00, 0 0 150px #40ff00;
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+@keyframes neon-glow {
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00e0, 0 0 35px #ff00e0, 0 0 40px #ff00e0, 0 0 50px #ff00e0, 0 0 75px #ff00e0;
+  }
+}
+.piano{
+    height: 300px;
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.72);
+    display: flex;
+    border: 35px solid rgb(0, 0, 0);
+}
+
+.piano .keys.whiteKeys{
+    width: 100px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid black;
+
+}
+.piano .keys.blackKeys{
+    background-color: black;
+    width: 60px;
+    height: 200px;
+    margin-left: -30px;
+    margin-right: -30px;
+    z-index: 20;
+}
